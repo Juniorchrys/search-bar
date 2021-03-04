@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #838383;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ion-icon {
+        background-color: #838383;
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+    }
+
+
+@media (min-width:320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+    .box {
+        width: 230px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    ion-icon {
+        font-size: 180%
+        margin-right: 2px;
+    }
+
+    input[type='search'] {
+        flex: 1;
+        height: 40px;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        padding-right: 10px;
+    }
+
+    input {
+        margin-bottom: 0;
+    }
+
+    input:focus {
+        outline: none !important;
+    }
+
+
+}
+
+@media (min-width:480px) {
+    /* smartphones, Android phones, landscape iPhone */
+}
+
+@media (min-width:600px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
+    .box {
+        width: 310px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    ion-icon {
+        font-size: 140%;
+        margin-right: 10px;
+        margin-left: 3px;
+    }
+
+}
+
+@media (min-width:801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+    ion-icon {
+        font-size: 140%;
+        margin-left: 3px;
+    }
+
+   
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    .box {
+        width: 340px;
+    }
+}
+
+@media (min-width:1281px) {
+    /* hi-res laptops and desktops */
+    .box {
+        width: 360px;
+        padding: 0;
+    }
+}
